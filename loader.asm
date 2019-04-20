@@ -1,7 +1,7 @@
 
         org     8000h
         macro   brk {  xchg    bx, bx }
-         
+
         ; Переход в графический режим сразу же
         mov     ax, 0012h        
         int     10h            

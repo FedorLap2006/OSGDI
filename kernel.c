@@ -1,4 +1,3 @@
-
 #include "kernel.h"
 #include "kernel/fs.h"
 #include "kernel/mm.h"
@@ -40,7 +39,9 @@
 
 void main() {
 
-    init(0); mouse_show(1); cls(3);
+    init(0);
+    mouse_show(1);
+    cls(1);
 
     make_desktop();
     make_miner();
