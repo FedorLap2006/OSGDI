@@ -12,5 +12,6 @@ bochs:
 startup.o: assembly/startup.asm
 	nasm -felf32 -o startup.o assembly/startup.asm
 
+#  $(wildcard kernel/*.c) $(wildcard kernel/fdc/*.c) $(wildcard gdi/*.c) $(wildcard app/*.c) $(wildcard kernel/*.c) $(wildcard kernel/fdc/*.c) $(wildcard gdi/*.c) $(wildcard app/*.c)
 kernel.o: kernel.c
 	clang -Os -ffreestanding -m32 -march=i386 -mno-sse -c -o kernel.o kernel.c

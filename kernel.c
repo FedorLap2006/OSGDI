@@ -17,6 +17,8 @@
 #include "kernel/timer.c"
 #include "kernel/keyboard.c"
 #include "kernel/ps2mouse.c"
+#include "kernel/fdc.h"
+#include "kernel/fdc.c"
 
 // Ядро
 #include "kernel/string.c"
