@@ -5,7 +5,7 @@
 # qemu-system-i386 -drive format=raw,file=disk.img
 
 # Для kernel.c
-if (nasm -felf32 -o startup.o startup.asm)
+if (nasm -felf32 -o startup.o assembly/startup.asm)
 then
 
 # Компиляция ядра -msse -msse2
